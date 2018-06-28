@@ -1,6 +1,9 @@
 var express = require('../../');
 
 var app = express();
+app.post("/",function(){
+  console.log("post");
+});
 
 app.get('/', function(req, res){
   res.send('Hello World');
